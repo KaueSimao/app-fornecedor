@@ -1,0 +1,74 @@
+<div class="container text-center">
+  <h1>Cadastro Clientes</h1>
+  <div class="row">
+    <div class="col-8 m-auto">
+      <form>
+        <div class="mb-3">
+          <div class="text-center">
+          </div>
+          <label for="name" class="form-label">Nome:</label>
+          <input type="text" class="form-control" id="name"  formControlName="name" placeholder="Nome">
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email:</label>
+          <input type="email" class="form-control" id="email" formControlName="email" placeholder="Email">
+        </div>
+        <div class="mb-3">
+          <label for="number" class="form-label">RG:</label>
+          <input type="number" class="form-control" id="rg" formControlName="rg" placeholder="RG">
+        </div>
+        <div class="mb-3">
+          <label for="telefone" class="form-label">Telefone:</label>
+          <input type="number" class="form-control" id="telefone" formControlName="telefone" placeholder="Telefone">
+        </div>
+        <div class="mb-3">
+          <label for="number" class="form-label">Sexo:</label>
+          <div class="mb-3">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+            <label class="form-check-label" for="flexRadioDefault1">
+              Masculino
+            </label>
+            <div class="mb-3">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+          <label class="form-check-label" for="flexRadioDefault1">
+            Feminino
+          </label>
+        </div>
+        </div>
+        <select class="form-select" aria-label="Seu estado">
+          <option selected>Seu Estado:</option>
+          <option value="1">One</option>
+          <option value="2">Two</option>
+          <option value="3">Three</option>
+        </select>
+        </div>
+        <div class="mb-3 text-center">
+          <button class="btn btn-outline-primary btn-lg" >Salvar</button>
+           <button class="btn btn-outline-warning btn-lg" >Limpar</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <form>
+    <div>
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Nome</th>
+        <th scope="col">Email</th>
+        <th scope="col">RG</th>
+        <th scope="col">Telefone</th>
+        <th scope="col">Sexo</th>
+        <th scope="col">Estado</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+            <button class="btn btn-outline-secondary" >Editar</button>
+            <button class="btn btn-outline-danger" >Excluir</button>
+    </tbody>
+  </table>
+  </div>
+  </form>
+</div>
